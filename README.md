@@ -1,50 +1,50 @@
-# 🎯 CyberX – Deepfake Video Detection Analysis System
+# CyberX – Deepfake Video Detection Analysis System
 
-## 📌 Overview
+## Overview
 CyberX is an AI-powered web-based system designed to detect deepfake videos by analyzing both visual and temporal features using computer vision and deep learning techniques. The system aims to support cybersecurity and prevent misuse of manipulated media by providing early detection of fake content.
 
 This project was developed in iterative sprints using Agile methodology, where Sprint 1 focused on system foundations and Sprint 2 implemented core AI detection and data management features.
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
-### 🔐 Authentication System
+### Authentication System
 - User Registration (name, email, password)
 - Secure Login System
 - Session Management
 
-### 🎥 Video Upload & Processing
+### Video Upload & Processing
 - Upload videos (MP4, AVI, MOV)
 - Drag-and-drop or file selection
 - File validation (type + size)
 
-### 🤖 AI-Based Deepfake Detection
+### AI-Based Deepfake Detection
 - Frame extraction from video
 - Preprocessing of frames
 - Deep learning model for classification
 - Output: Real or Fake
 
-### 📊 Result Visualization
+### Result Visualization
 - Detection result (Real/Fake)
 - Confidence score (percentage)
 - Color-coded UI (Green = Real, Red = Fake)
 
-### 📂 Analysis History
+### Analysis History
 - View past analyzed videos
 - Store results per user
 - Persistent data across sessions
 
-### ⏳ Progress Loader
+### Progress Loader
 - Real-time processing indicator
 - Status messages during analysis
 
-### 🗑️ Data Management
+### Data Management
 - Delete uploaded videos
 - Confirmation prompts
 - Immediate UI updates
 
-### 📄 Report Generation
+### Report Generation
 - Downloadable PDF report
 - Includes:
   - Video name
@@ -54,7 +54,7 @@ This project was developed in iterative sprints using Agile methodology, where S
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 CyberX follows a **3-Tier Architecture**:
 
@@ -74,7 +74,7 @@ CyberX follows a **3-Tier Architecture**:
 
 ---
 
-## 🔄 System Workflow
+## System Workflow
 
 1. User registers/logs in
 2. User uploads video
@@ -92,28 +92,28 @@ CyberX follows a **3-Tier Architecture**:
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
-### 💻 Frontend
+### Frontend
 - React / Next.js
 - TypeScript
 - CSS
 
-### ⚙️ Backend
+### Backend
 - Node.js / Express
 - API Routes
 
-### 🤖 AI / ML
+### AI / ML
 - Python
 - Deep Learning Model (CNN / LSTM based)
 - OpenCV (for frame extraction)
 
-### 🗄️ Database
+### Database
 - (Specify: MongoDB / Firebase / SQL if used)
 
 ---
 
-## 📊 Diagrams Included
+## Diagrams Included
 
 - Architecture Diagram
 - Component Diagram
@@ -125,7 +125,7 @@ CyberX follows a **3-Tier Architecture**:
 
 ---
 
-## 🧑‍🤝‍🧑 Team Contributions
+## Team Contributions
 
 | Member | Role | Responsibilities |
 |------|------|----------------|
@@ -135,7 +135,7 @@ CyberX follows a **3-Tier Architecture**:
 
 ---
 
-## 📈 Agile Development
+## Agile Development
 
 - Methodology: Scrum
 - Sprint 1: Authentication + Upload System
@@ -144,7 +144,7 @@ CyberX follows a **3-Tier Architecture**:
 
 ---
 
-## ⚡ Performance & Non-Functional Requirements
+## Performance & Non-Functional Requirements
 
 - Fast processing (under ~60 seconds)
 - User-friendly interface
@@ -155,7 +155,7 @@ CyberX follows a **3-Tier Architecture**:
 
 ---
 
-## 🔐 Security Features
+## Security Features
 
 - Input validation
 - File type restrictions
@@ -165,7 +165,7 @@ CyberX follows a **3-Tier Architecture**:
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Real-time deepfake detection
 - Audio + image-based detection
@@ -175,7 +175,7 @@ CyberX follows a **3-Tier Architecture**:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 CyberX/
 │── app.py
 │── predict.py
@@ -190,7 +190,7 @@ CyberX/
 
 
 
-## ▶️ How to Run
+## How to Run
 
 ### 1. Clone Repository
 ```bash
