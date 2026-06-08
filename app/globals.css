@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* CyberX Dark Theme with Bright Neon Accents */
+  --background: #0a0e17;
+  --foreground: #e8f1ff;
+  --card: #111827;
+  --card-foreground: #e8f1ff;
+  --popover: #111827;
+  --popover-foreground: #e8f1ff;
+  --primary: #00f0ff;
+  --primary-foreground: #0a0e17;
+  --secondary: #1e293b;
+  --secondary-foreground: #e8f1ff;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #a855f7;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #1e3a5f;
+  --input: #1e293b;
+  --ring: #00f0ff;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --chart-1: #00f0ff;
+  --chart-2: #a855f7;
+  --chart-3: #22c55e;
+  --chart-4: #f59e0b;
+  --chart-5: #ec4899;
+  --radius: 0.75rem;
+  --sidebar: #0f172a;
+  --sidebar-foreground: #e8f1ff;
+  --sidebar-primary: #00f0ff;
+  --sidebar-primary-foreground: #0a0e17;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #e8f1ff;
+  --sidebar-border: #1e3a5f;
+  --sidebar-ring: #00f0ff;
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Cyber glow effects */
+.cyber-glow {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3), 0 0 40px rgba(0, 240, 255, 0.1);
+}
+
+.cyber-glow-text {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.cyber-glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3), 0 0 40px rgba(168, 85, 247, 0.1);
+}
+
+.cyber-border {
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.gradient-cyber {
+  background: linear-gradient(135deg, #0a0e17 0%, #111827 50%, #0f172a 100%);
+}
+
+/* Animated background grid */
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Input focus glow */
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 2px rgba(0, 240, 255, 0.2), 0 0 20px rgba(0, 240, 255, 0.1);
+}
+
+/* Button hover effects */
+.btn-cyber:hover {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.5), 0 0 60px rgba(0, 240, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.btn-cyber:active {
+  transform: translateY(0);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
